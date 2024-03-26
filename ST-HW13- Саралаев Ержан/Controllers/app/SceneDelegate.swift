@@ -14,9 +14,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        let tabBarColor = UIColor { traitCollection -> UIColor in
+            if traitCollection.userInterfaceStyle == .dark {
+                return UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.95) // Прозрачный цвет для темной темы
+            } else {
+                return UIColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 0.95) // Прозрачный цвет для светлой темы
+            }
+        }
+
+        if #available(iOS 15.0, *) {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            
+            appearance.backgroundColor = tabBarColor
+            appearance.shadowImage = nil
+            appearance.shadowColor = nil
+            
+            UITabBar.appearance().standardAppearance = appearance
+            UITabBar.appearance().scrollEdgeAppearance = UITabBar.appearance().standardAppearance
+        }
         window = UIWindow(windowScene: windowScene)
-        let viewController = ViewController()
-        window?.rootViewController = viewController
+        let tabBarController = TabBarController()
+        window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
     }
 }
