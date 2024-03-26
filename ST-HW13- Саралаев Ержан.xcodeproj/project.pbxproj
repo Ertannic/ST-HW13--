@@ -12,6 +12,9 @@
 		521C68532BB31AAB0034B3DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C68522BB31AAB0034B3DA /* ViewController.swift */; };
 		521C68582BB31AAD0034B3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521C68572BB31AAD0034B3DA /* Assets.xcassets */; };
 		521C68682BB31FA40034B3DA /* PhotoModelsMyAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C68672BB31FA40034B3DA /* PhotoModelsMyAlbum.swift */; };
+		521C686A2BB320790034B3DA /* myAlbumsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C68692BB320790034B3DA /* myAlbumsTitle.swift */; };
+		521C686C2BB3257F0034B3DA /* CompositionalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C686B2BB3257F0034B3DA /* CompositionalModel.swift */; };
+		521C686E2BB326AC0034B3DA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C686D2BB326AC0034B3DA /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		521C68572BB31AAD0034B3DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		521C685C2BB31AAD0034B3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "ST-HW13- Саралаев Ержан/Model/assets/Info.plist"; sourceTree = SOURCE_ROOT; };
 		521C68672BB31FA40034B3DA /* PhotoModelsMyAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelsMyAlbum.swift; sourceTree = "<group>"; };
+		521C68692BB320790034B3DA /* myAlbumsTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myAlbumsTitle.swift; sourceTree = "<group>"; };
+		521C686B2BB3257F0034B3DA /* CompositionalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalModel.swift; sourceTree = "<group>"; };
+		521C686D2BB326AC0034B3DA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +70,10 @@
 		521C68622BB31B690034B3DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				521C68652BB31BF60034B3DA /* assets */,
 				521C68672BB31FA40034B3DA /* PhotoModelsMyAlbum.swift */,
+				521C68692BB320790034B3DA /* myAlbumsTitle.swift */,
+				521C686B2BB3257F0034B3DA /* CompositionalModel.swift */,
+				521C68652BB31BF60034B3DA /* assets */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				521C68662BB31C200034B3DA /* app */,
+				521C686D2BB326AC0034B3DA /* TabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,7 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				521C68532BB31AAB0034B3DA /* ViewController.swift in Sources */,
+				521C686C2BB3257F0034B3DA /* CompositionalModel.swift in Sources */,
+				521C686A2BB320790034B3DA /* myAlbumsTitle.swift in Sources */,
 				521C684F2BB31AAB0034B3DA /* AppDelegate.swift in Sources */,
+				521C686E2BB326AC0034B3DA /* TabBarController.swift in Sources */,
 				521C68682BB31FA40034B3DA /* PhotoModelsMyAlbum.swift in Sources */,
 				521C68512BB31AAB0034B3DA /* SceneDelegate.swift in Sources */,
 			);
